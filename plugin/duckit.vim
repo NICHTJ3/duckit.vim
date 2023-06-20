@@ -33,4 +33,5 @@ function! DuckIt(type, ...)
   let @@ = reg_save
 endfunction
 
+" TODO: Fix changing this value not actually changing the mapping in user config
 let g:duckit_mapping = 'gs'

@@ -33,7 +33,4 @@ function! DuckIt(type, ...)
   let @@ = reg_save
 endfunction
 
-let g:duckit_mapping = '<leader>gs'
-nnoremap <silent> <expr> <Plug>DuckIt ":call DuckIt('', '')\<CR>"
-execute 'nnoremap <silent> ' . g:duckit_mapping . ' <Plug>DuckIt'
-vnoremap <silent> <leader>gs :<C-u>call DuckIt(visualmode(), '')<CR>
+let g:duckit_mapping = 'gs'
